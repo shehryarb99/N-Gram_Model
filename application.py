@@ -3,6 +3,9 @@ import streamlit as st
 import nltk
 from nltk.util import ngrams
 
+# Download the 'punkt' resource
+nltk.download('punkt')
+
 # Define a function to generate n-grams from a text
 def generate_ngrams(text, n):
   # Tokenize the text into words
